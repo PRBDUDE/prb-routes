@@ -1,0 +1,25 @@
+@use "color";
+
+.page-nav {
+  background-color: var(--color-menu-background);
+  color: var(--color-menu-text);
+  padding: 0.2em 1em;
+
+  ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+
+    a {
+      color: inherit;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-align: center;
+
+      &:hover {
+        background-color: var(--color-menu-hover-background);
+        color: var(--color-menu-hover-text);
+      }
+    }
+  }
+}

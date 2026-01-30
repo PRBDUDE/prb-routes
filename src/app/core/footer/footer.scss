@@ -1,0 +1,9 @@
+@use "color";
+
+.page-footer {
+  padding: 1em;
+  text-align: center;
+  background-color: var(--color-footer-background);
+  color: var(--color-footer-text);
+  font-weight: bold;
+}

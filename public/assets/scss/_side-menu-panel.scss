@@ -1,0 +1,37 @@
+@use "color";
+@use "base";
+
+:root {
+  --side-panel-menu-width: 200em;
+}
+
+.side-menu-panel {
+  min-width: var(--side-panel-menu-width);
+  height: var(--content-height);
+  border-right: 4px solid var(--color-side-menu-border);
+  background-color: var(--color-side-menu-background);
+  margin-right: 1em;
+  padding: 1em 0;
+  text-align: right;
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    a {
+      color: inherit;
+      padding: 6px 10px;
+      text-decoration: none;
+
+      &:hover {
+        background-color: var(--color-menu-hover-background);
+        color: var(--color-menu-hover-text);
+      }
+    }
+
+    > li {
+      list-style-type: none;
+      padding: 6px;
+    }
+  }
+}
