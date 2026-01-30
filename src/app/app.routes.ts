@@ -23,5 +23,15 @@ export const routes: Routes = [
     loadChildren: () => import('./feature/top-level-2/top-level-2-routes')
       .then(m => m.topLevel2Routes),
     title: 'Top Level 2'
+  },
+  {
+    path: 'page-not-found',
+    loadComponent: () => import('./core/error-handlers/page-not-found/page-not-found')
+      .then(m => m.PageNotFound),
+  },
+  {
+    path: '**',
+    redirectTo: '/page-not-found',
+    pathMatch: 'full'
   }
 ];
