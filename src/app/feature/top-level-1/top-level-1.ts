@@ -1,11 +1,9 @@
-import { Component } from '@angular/core';
-import {RouterLink} from '@angular/router';
+import {Component} from '@angular/core';
 import {SideMenu} from './side-menu/side-menu';
 
 @Component({
   selector: 'prb-top-level-1',
   imports: [
-    RouterLink,
     SideMenu
   ],
   templateUrl: './top-level-1.html',
