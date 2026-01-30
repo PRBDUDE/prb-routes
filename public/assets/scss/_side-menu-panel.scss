@@ -1,10 +1,6 @@
 @use "color";
 @use "base";
 
-:root {
-  --side-panel-menu-width: 200em;
-}
-
 .side-menu-panel {
   min-width: var(--side-panel-menu-width);
   height: var(--content-height);
