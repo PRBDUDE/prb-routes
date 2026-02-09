@@ -1,0 +1,47 @@
+<h1>Sub Router Demo</h1>
+<h2>Batch Job Status</h2>
+<div class="content-container">
+  <div class="batch-status">
+    <div class="grid-container batch-id">
+      <span class="label">Batch:</span>
+      <span class="value">{{ batchId }}</span>
+    </div>
+    <div class="grid-container run-date">
+      <span class="label">Start Date:</span>
+      <span class="value">{{ runStartDate | date:'MMMM dd, yyyy' }}</span>
+    </div>
+    <div class="grid-container run-time">
+      <span class="label">Start Time:</span>
+      <span class="value">{{ runStartDate | date:'HH:mm:ss' }}</span>
+    </div>
+    <div class="grid-container run-date">
+      <span class="label">End Date:</span>
+      <span class="value">{{ runEndDate | date:'MMMM dd, yyyy' }}</span>
+    </div>
+    <div class="grid-container run-time">
+      <span class="label">End Time:</span>
+      <span class="value">{{ runEndDate | date:'HH:mm:ss' }}</span>
+    </div>
+  </div>
+  <div class="batch-status-nav">
+  <ul>
+    <li>
+      <a [routerLink]="[
+              '/sub-router-demo',
+              { outlets: { 'job-status': [
+              'job-success'
+              ] } } ]">Success
+      </a>
+    </li>
+    <li>
+      <a [routerLink]="[
+              '/sub-router-demo',
+              { outlets: { 'job-status': [
+              'job-failure'
+              ] } } ]">Failure
+      </a>
+    </li>
+  </ul>
+  </div>
+  <router-outlet name="job-status"/>
+</div>

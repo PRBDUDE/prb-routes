@@ -1,0 +1,25 @@
+<div>
+  <h3>Job Success</h3>
+  <div>
+    <table>
+      <thead>
+      <tr>
+        <th class="batch-id">Batch Id</th>
+        <th class="date">Date</th>
+        <th class="time">Time</th>
+        <th class="description">Description</th>
+      </tr>
+      </thead>
+      <tbody>
+        @for (job of this.jobEvents; track $index) {
+          <tr>
+            <td class="batch-id">{{ job.batchId }}</td>
+            <td class="date">{{ job.timestamp | date:'MMM dd, yyyy' }}</td>
+            <td class="time">{{ job.timestamp | date:'HH:mm:ss' }}</td>
+            <td class="description">{{ job.description }}</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+</div>
