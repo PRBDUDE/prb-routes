@@ -28,7 +28,13 @@ export const routes: Routes = [
     path: 'sub-router-outlet',
     loadChildren: () => import('./feature/sub-router-outlet/sub-router-outlet-routes')
       .then(m => m.subRouterOutletRoutes),
-    title: 'Top Level 2'
+    title: 'Sub Router Outlet Base'
+  },
+  {
+    path: 'sub-router-demo',
+    loadChildren: () => import('./feature/sub-router-demo/sub-router-demo-routes')
+      .then(m => m.subRouterDemoRoutes),
+    title: 'Sub Router Demo'
   },
   {
     path: 'page-not-found',
