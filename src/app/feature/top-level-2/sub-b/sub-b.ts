@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {SideMenu} from '../side-menu/side-menu';
 
 @Component({

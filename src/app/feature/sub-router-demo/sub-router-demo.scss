@@ -1,0 +1,118 @@
+h1 {
+  padding-left: 1em;
+}
+
+h2 {
+  padding-left: 2em;
+}
+
+.content-container {
+  padding-left: 3em;
+
+  .batch-status {
+    background-color: var(--color-status-background);
+    border: 2px solid var(--color-status-border);
+    border-radius: 12px;
+    width: fit-content;
+    padding: 0.5em;
+    box-shadow: 3px 3px 5px var(--color-status-shadow);
+
+    .grid-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .label,
+    .value {
+      padding: 0.1em 0.3em;
+      margin: 0.2em;
+    }
+
+    .label {
+      font-weight: bold;
+      width: 6em;
+      color: var(--color-status-label);
+    }
+
+    .value {
+      background-color: var(--color-status-value-background);
+      color: var(--color-status-value-text);
+      border-radius: 6px;
+      width: 8em;
+      text-align: left;
+    }
+  }
+}
+
+.batch-status-nav {
+  background-color: var(--color-menu-background);
+  color: var(--color-menu-text);
+  border-radius: 12px;
+  padding: 0.2em 1em;
+  margin: 1em 0;
+  width: fit-content;
+
+  ul {
+    display: flex;
+    list-style-type: none;
+    padding: unset;
+    margin: 5px;
+
+    a {
+      color: inherit;
+      padding: 4px 10px;
+      text-decoration: none;
+      text-align: center;
+
+      &:hover {
+        background-color: var(--color-menu-hover-background);
+        color: var(--color-menu-hover-text);
+      }
+    }
+  }
+}
+
+table, th, td {
+  border: 1px solid var(--color-table-border);
+  border-collapse: collapse;
+}
+
+table {
+  th {
+    background-color: var(--color-table-header-background);
+  }
+
+  tr {
+    .batch-id {
+      width: 6.5em;
+      text-align: center;
+    }
+
+    .date {
+      width: 6em;
+      text-align: center;
+    }
+
+    .time {
+      width: 4em;
+      text-align: center;
+    }
+
+    th.description, td.description {
+      width: 10em;
+    }
+
+    th.description {
+      text-align: center;
+    }
+
+    td.description {
+      text-align: left;
+      padding-left: 0.3em;
+    }
+
+    td {
+      font-size: 0.8em;
+    }
+  }
+}
