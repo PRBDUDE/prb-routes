@@ -1,0 +1,86 @@
+<h1>Sub Router Outlet</h1>
+<div class="content-container">
+  <div class="sub-outlet-left-container">
+    <div class="sub-outlet-panel">
+      <h3>Left Panel</h3>
+      <div class="outlet-control">
+        <ul>
+          <li>
+            <a [routerLink]="[
+              '/sub-router-outlet',
+              { outlets: { 'left-panel': [
+              'sub-path-1'
+              ] } } ]">Left Path 1.0
+            </a>
+          </li>
+          <li>
+            <a [routerLink]="[
+              '/sub-router-outlet',
+              { outlets: { 'left-panel': [
+              'sub-path-1-1'
+              ] } }]">Left Path 1.1
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="sub-outlet-container">
+        <router-outlet name="left-panel"/>
+      </div>
+    </div>
+
+    <div class="sub-outlet-panel">
+      <h3>Left Panel Lower</h3>
+      <div class="outlet-control">
+        <ul>
+          <li>
+            <a [routerLink]="[
+              '/sub-router-outlet',
+              { outlets: { 'lower-left-panel': [
+              'sub-path-1-2'
+              ] } } ]">Left Path 1.2
+            </a>
+          </li>
+          <li>
+            <a [routerLink]="[
+              '/sub-router-outlet',
+              { outlets: { 'lower-left-panel': [
+              'sub-path-1-3'
+              ] } }]">Left Path 1.3
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="sub-outlet-container">
+        <router-outlet name="lower-left-panel"/>
+      </div>
+    </div>
+  </div>
+  <div class="sub-outlet-right-container">
+    <div class="sub-outlet-panel">
+      <h3>Right Panel</h3>
+      <div class="outlet-control">
+        <ul>
+          <li>
+            <a [routerLink]="[
+              '/sub-router-outlet',
+              { outlets: { 'right-panel': [
+              'sub-path-2'
+              ] } } ]">Right Path 2.0
+            </a>
+          </li>
+          <li>
+            <a [routerLink]="[
+              '/sub-router-outlet',
+              { outlets: { 'right-panel': [
+              'sub-path-2-1'
+              ] } }]">Right Path 2.1
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="sub-outlet-container">
+        <router-outlet name="right-panel"/>
+      </div>
+    </div>
+  </div>
+</div>
