@@ -1,13 +1,23 @@
 :root {
   --color-h1: hsl(183, 83%, 30%);
 
-  --color-menu-background: hsl(0, 0%, 80%);
-  --color-menu-text: hsl(0, 0%, 20%);
-  --color-menu-hover-background: hsl(0, 0%, 87%);
-  --color-menu-hover-text: hsl(347, 75%, 35%);
+  --color-menu-background: hsl(183, 0%, 80%);
+  --color-menu-text: hsl(183, 0%, 20%);
+  --color-menu-hover-background: hsl(183, 0%, 87%);
+  --color-menu-hover-text: hsl(183, 75%, 23%);
 
-  --color-side-menu-background: hsl(0, 0%, 80%);
+  --color-side-menu-background: hsl(183, 0%, 80%);
 
-  --color-footer-text: hsl(0, 0%, 80%);
-  --color-footer-background: hsl(0, 0%, 20%);
+  --color-footer-text: hsl(183, 0%, 80%);
+  --color-footer-background: hsl(183, 0%, 20%);
+
+  --color-status-border: hsl(183, 0%, 40%);
+  --color-status-shadow: hsl(183, 0%, 60%);
+  --color-status-background: hsl(183, 1%, 76%);
+  --color-status-label: hsl(183, 0%, 30%);
+  --color-status-value-background: hsl(183, 1%, 90%);
+  --color-status-value-text: hsl(183, 30%, 9%);
+
+  --color-table-header-background: hsl(183, 1%, 72%);
+  --color-table-border: hsl(183, 0%, 40%);
 }
