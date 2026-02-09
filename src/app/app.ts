@@ -1,7 +1,7 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import {MenuBar} from './core/menu-bar/menu-bar';
-import {Footer} from './core/footer/footer';
+import {Component, signal} from '@angular/core';
+import {RouterOutlet} from '@angular/router';
+import {MenuBar} from '@core/menu-bar';
+import {Footer} from '@core/footer';
 
 @Component({
   selector: 'prb-root',

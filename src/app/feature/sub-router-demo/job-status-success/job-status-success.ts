@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {JobStatus} from '../model/job-status';
-import {setDate} from '../../../core/date-functions/set-date';
+import {setDate} from '@core/set-date';
 import {DatePipe} from '@angular/common';
 
 @Component({
