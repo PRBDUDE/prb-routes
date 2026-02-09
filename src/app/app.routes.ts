@@ -25,6 +25,12 @@ export const routes: Routes = [
     title: 'Top Level 2'
   },
   {
+    path: 'sub-router-outlet',
+    loadChildren: () => import('./feature/sub-router-outlet/sub-router-outlet-routes')
+      .then(m => m.subRouterOutletRoutes),
+    title: 'Top Level 2'
+  },
+  {
     path: 'page-not-found',
     loadComponent: () => import('./core/error-handlers/page-not-found/page-not-found')
       .then(m => m.PageNotFound),
